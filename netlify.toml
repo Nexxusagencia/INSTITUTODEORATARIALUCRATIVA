@@ -5,7 +5,7 @@
 
 # Imagens e fontes podem ficar em cache por muito tempo.
 [[headers]]
-  for = "/img/*"
+  for = "/*.jpg"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 

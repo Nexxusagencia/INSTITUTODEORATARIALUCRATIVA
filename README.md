@@ -8,15 +8,17 @@ Página estática, um arquivo só, sem build e sem dependências.
 ## Estrutura
 
 ```
-index.html                      página completa (HTML + CSS + JS inline)
-img/
-  hero-escritorio.jpg           foto do hero
-  palco-instituto.jpg           foto da seção "Por que começar agora"
-  treinamento-online.jpg        foto da seção de oferta
-  logo-instituto.png            símbolo da marca (versão fundo escuro, com transparência)
-  og-instituto.jpg              imagem de compartilhamento — 1200×630
-netlify.toml                    cabeçalhos de cache e segurança
+index.html                 página completa (HTML + CSS + JS inline)
+hero-escritorio.jpg        foto do hero
+palco-instituto.jpg        foto da seção "Por que começar agora"
+treinamento-online.jpg     foto da seção de oferta
+logo-instituto.png         símbolo da marca (versão fundo escuro, com transparência)
+og-instituto.jpg           imagem de compartilhamento — 1200×630
+netlify.toml               cabeçalhos de cache e segurança
 ```
+
+Tudo na raiz, sem subpastas: o upload pela interface web do GitHub não
+preserva estrutura de pasta, então manter plano evita o problema.
 
 Fontes vêm do Google Fonts (Newsreader + Archivo). Todo o resto é local.
 
@@ -24,7 +26,9 @@ Fontes vêm do Google Fonts (Newsreader + Archivo). Todo o resto é local.
 
 ## Antes de publicar — checklist
 
-- [ ] **Trocar `SEU-DOMINIO.com.br`** nas tags `canonical`, `og:url` e `og:image` do `index.html`
+- [x] ~~Trocar `SEU-DOMINIO.com.br`~~ — já aponta para
+      `https://nexxusagencia.github.io/INSTITUTO-DE-ORAT-RIA-LUCRATIVA/`.
+      **Ao migrar para domínio próprio, trocar as três ocorrências no `<head>`.**
 - [ ] **Ativar o GA4**: descomentar o bloco no `<head>` e trocar `G-XXXXXXXXXX`
 - [ ] **Ativar o Meta Pixel**: descomentar o bloco e trocar `SEU_PIXEL_ID`
 - [ ] **Conferir o número do WhatsApp** — hoje está `5515 3198-0182`, em 6 links.
