@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
 
   <meta name="description" content="Treinamento online de comunicação do Instituto Oratória Lucrativa: expresse-se com mais segurança, aumente seu poder de persuasão e posicione-se com mais autoridade.">
   <meta name="theme-color" content="#10192F">
@@ -67,6 +68,8 @@
    ============================================================ */
 
 :root{
+  color-scheme: light;
+
   /* superfícies e tinta — tema claro */
   --ground:      #F7F2E8;
   --ground-2:    #EFE7D6;
@@ -97,54 +100,9 @@
   --r-md: 6px;
 }
 
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:      #0A1020;
-    --ground-2:    #111A2D;
-    --ink:         #EFE9DC;
-    --ink-soft:    #9EA3B0;
-    --line:        #24304A;
-
-    --panel:       #111A2D;
-    --panel-2:     #18233F;
-    --on-panel:    #EFE9DC;
-    --on-panel-soft:#9EA3B0;
-    --panel-line:  #24304A;
-
-    --brass:       #DCAE4C;
-    --brass-lit:   #DCAE4C;
-    --brass-panel: #E0B252;
-
-    --btn-bg:      #DCAE4C;
-    --btn-bg-hover:#E8C374;
-    --btn-ink:     #0A1020;
-
-    --focus:       #DCAE4C;
-  }
-}
-:root[data-theme="dark"]{
-  --ground:      #0A1020;
-  --ground-2:    #111A2D;
-  --ink:         #EFE9DC;
-  --ink-soft:    #9EA3B0;
-  --line:        #24304A;
-
-  --panel:       #111A2D;
-  --panel-2:     #18233F;
-  --on-panel:    #EFE9DC;
-  --on-panel-soft:#9EA3B0;
-  --panel-line:  #24304A;
-
-  --brass:       #DCAE4C;
-  --brass-lit:   #DCAE4C;
-  --brass-panel: #E0B252;
-
-  --btn-bg:      #DCAE4C;
-  --btn-bg-hover:#E8C374;
-  --btn-ink:     #0A1020;
-
-  --focus:       #DCAE4C;
-}
+/* TEMA FIXO — a página usa sempre a paleta clara (marfim + marinho + latão).
+   O tema escuro automático do sistema foi removido de propósito: a LP deve
+   aparecer com as mesmas cores no desktop e no celular, em qualquer aparelho. */
 
 *,*::before,*::after{ box-sizing:border-box; }
 
@@ -775,7 +733,7 @@ html{ scroll-behavior:smooth; }
   <style>
     /* reset base — espelha o ambiente em que a página foi desenhada */
     :root{
-      color-scheme: light dark;
+      color-scheme: light;
       padding-top: env(safe-area-inset-top, 0px);
       padding-bottom: env(safe-area-inset-bottom, 0px);
     }
